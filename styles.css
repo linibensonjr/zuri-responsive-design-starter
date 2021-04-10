@@ -201,6 +201,9 @@ div.circle {
     
 }
 
+.menu{
+    display: none;
+}
 div.box1 h5 {
     text-align: center;
     padding-top: 2rem;
@@ -348,7 +351,7 @@ div.footer h6 {
 
 /* Responsive Design*/
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     div.nav-bar {
         display: flex;
@@ -359,13 +362,13 @@ div.footer h6 {
     }
     
     div.logo {
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: #bcc3c7;
     }
     
-    ul.nav-links {
-        display: flex;
-        flex-direction: column;
+    .nav-links {
+        display: none;
+        position: relative;
         margin: 0;
         padding: 0;
     }
@@ -459,8 +462,8 @@ div.footer h6 {
     div.background p {
         color: #A6A5AA;
         padding-left: 2rem;
-        font-size: 0.8rem;
-        letter-spacing: 2px;
+        font-size: 0.5rem;
+        letter-spacing: 1px;
     }
     
     div.hero-background-pos {
@@ -594,7 +597,7 @@ div.footer h6 {
     
     div.footer {
         background: #304353;
-        padding: 3rem;
+        padding: 2rem;
     }
     
     div.footer-content {
@@ -617,6 +620,7 @@ div.footer h6 {
     
     div.footer-input {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-top: 3rem;
@@ -625,7 +629,7 @@ div.footer h6 {
     input[type="text"] {
         margin-right: 10px;
         padding: 10px 20px;
-        width: 25%;
+        width: 50%;
         outline: none;
         border: 1px solid #bcc3c7;
         background: transparent;
@@ -636,8 +640,9 @@ div.footer h6 {
     
     input[type="email"] {
         margin-right: 10px;
+        margin-top: 5px;
         padding: 10px 20px;
-        width: 25%;
+        width: 50%;
         outline: none;
         border: 1px solid #bcc3c7;
         background: transparent;
@@ -689,6 +694,19 @@ div.footer h6 {
         color: #88949B;
         font-size: 1rem;
         padding-top: 6rem;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .menu {
+        display: flex;
+        color: #88949B;
+        padding: 0.5vw;
+        background: none;
+        border: none;
+        font-size: 1.2em;
     }
     
   }
