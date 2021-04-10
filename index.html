@@ -13,7 +13,7 @@
         <div class="logo">Snapshot</div>
         <button onclick="dropDown()" class="menu">Menu</button>
         <div id="drop-down" class="nav-links" >
-            <ul>
+            <ul class="nav-link">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Gallery</a></li>
@@ -115,7 +115,7 @@
 
         window.onclick = function(event) {
             if (!event.target.matches('.menu')){
-                var drops = document.getElementsByClassName("nav-links");
+                var drops = document.getElementsByClassName("nav-link");
                 var i;
                 for (i = 0; i < drops.length; i++) {
                     var openDrop = drops[i];

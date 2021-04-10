@@ -20,7 +20,7 @@ div.logo {
     color: #bcc3c7;
 }
 
-ul.nav-links {
+ul.nav-link {
     display: flex;
     margin: 0;
     padding: 0;
@@ -373,6 +373,7 @@ div.footer h6 {
         padding: 0;
     }
     
+
     ul li {
         margin: 0 2vw;
         list-style: none;
@@ -697,7 +698,7 @@ div.footer h6 {
     }
 
     .show {
-        display: block;
+        display: flex;
     }
 
     .menu {
